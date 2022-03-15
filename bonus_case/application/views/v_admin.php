@@ -29,7 +29,10 @@
             ?>
             <tr>
               <td><?= $no++; ?></td>
-              <td></td>
+              <td>
+                <a class="btn btn-warning btn-sm" href="<?= base_url('Admin/edit/').$i->id; ?>" role="button">Edit</a> |
+                <a class="btn btn-danger btn-sm" href="<?= base_url('Admin/delete/').$i->id; ?>" role="button">Delete</a>
+              </td>
               <td><?= $i->nama_instansi; ?></td>
               <td><?= $i->deskripsi; ?></td>
             </tr>
